@@ -24,7 +24,9 @@ function getEmail() {
 
 function init() {
 	linkEl = document.getElementById('contact-email');
-	linkEl.href = "mailto:" + getEmail();
+	if (linkEl) {
+		linkEl.href = "mailto:" + getEmail();
+	}
 }
 
 

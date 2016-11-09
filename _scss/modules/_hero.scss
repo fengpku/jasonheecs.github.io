@@ -1,9 +1,11 @@
 .hero {
+	// scss-lint:disable DuplicateProperty
 	@extend %flex;
 	@extend %flex-center;
 	@extend %flex-middle;
 	height: 100px;
 	min-height: 100vh;
+	min-height: calc(100vh - #{$header-height});
 }
 
 .hero__name {

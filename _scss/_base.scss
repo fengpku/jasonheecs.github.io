@@ -26,9 +26,17 @@ body {
 	font-family: $font-primary;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+
+	@media screen and (min-width: $mq-large) {
+    text-rendering: optimizeLegibility;
+  }
 }
 
 a {
 	color: lighten($color-secondary, 15%);
 	outline: none;
+}
+
+.scene-element {
+	padding-top: 50px;
 }
